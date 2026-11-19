@@ -1,0 +1,6 @@
+{
+  "name": "IOTICA — Ingeniería de Software, Sitios Web, Pasarelas de Pago y SII",
+  "description": "IOTICA diseña y desarrolla sitios web de alta conversión, software a medida, integración de pasarelas de pago y emisión automática de documentación tributaria SII en Chile.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

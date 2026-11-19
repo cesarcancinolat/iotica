@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-navy: #0b192c;
+  --color-brand-navy-elevated: #122640;
+  --color-brand-cobalt: #1d4ed8;
+  --color-brand-sky: #0284c7;
+  --color-brand-emerald: #047857;
+  --color-brand-canvas: #f8fafc;
+}
+
+@layer base {
+  :root {
+    --iotica-navy: #0b192c;
+    --iotica-cobalt: #1d4ed8;
+    --iotica-sky: #0284c7;
+    --iotica-emerald: #047857;
+    --iotica-canvas: #f8fafc;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--iotica-canvas);
+    color: var(--iotica-navy);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
